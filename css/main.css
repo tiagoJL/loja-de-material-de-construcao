@@ -1,0 +1,253 @@
+body {
+    position: relative;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: minmax(auto, 1200px);
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.subtitle {
+    color: #EEEDEB;
+    font-size: 1.8rem;
+    width: fit-content;
+    position: relative;
+    background-color: #35374B;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.main section {
+    overflow-x: auto;
+}
+
+.subtitle::before {
+    position: absolute;
+    content: "";
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subtitle_ferragem::before {
+    background-image: url("../img/ferragem.svg");
+}
+
+.subtitle_eletrica::before {
+    background-image: url("../img/eletrica.svg");
+}
+
+.subtitle_tintas::before {
+    background-image: url("../img/paint.svg");
+}
+
+.products {
+    max-width: 100%;
+    display: flex;
+    gap: 35px;
+    overflow-x: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 10px solid white;
+    margin: 15px 0;    
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #EEEDEB;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 15px;
+    min-width: 250px;
+    min-height: 400px;
+}
+
+.produtc_img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.button_product {
+    background-color: #0e0e0e;
+    color: #bb9a83;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.desc_product {
+    font-size: 1.5rem;
+    color: #35374B;
+    flex: 1;
+}
+
+.preco {
+    color: #bb9a83;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.carrinho-screen.active {
+    opacity: 1;
+    width: 60%;
+    transition-duration: 300ms;
+    
+    transition-property: opacity width backdrop-filter;
+}
+
+.carrinho-screen {
+    opacity: 0;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #EEEDEB;
+    /* border-left: 5px solid #0e0e0e; */
+    box-shadow: 3px 3px 10px 10px #0e0e0e7e;
+    z-index: 20;
+}
+
+.carrinho-screen h2 {
+    font-size: 2rem;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 45px;
+    background-color: #35374B;
+    color: #EEEDEB;
+    position: relative;
+}
+
+.carrinho-screen h2::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    background-size: contain;
+    background-image: url("../img/cart.svg");
+}
+
+.carrinho-screen.active::before {
+    content: "";
+    opacity: 1;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: -60%;
+    top: 0;
+    transition-duration: 300ms;
+    transition-property: opacity width backdrop-filter;
+
+}
+
+.carrinho-screen::before {
+    content: "";
+    opacity: 0;
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    position: fixed;
+    height: 100%;
+    width: 0;
+    left: -60%;
+    top: 0;
+}
+
+legend, label {
+    color: #35374B;
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    border-bottom: 3px dashed #35374b74;
+}
+
+legend {
+    margin-bottom: 80px;
+}
+
+.fechar {
+    font-size: 1rem;
+    position: fixed;
+    top: 0;
+    width: 40px;
+    font-weight: bold;
+    color: #EEEDEB;
+    padding: 5px;
+    border: 4px dashed #EEEDEB;
+    transform: translateX(-80%);
+    cursor: pointer;
+}
+
+#subtotal {
+    margin-top: 60px;
+}
+
+form {
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+    .logo_title {
+        font-size: 1.4rem;
+    }
+    .slide-nav-button {
+        font-size: 5rem;
+    }
+    .slide-wrapper {
+        height: 300px;
+    }
+    .banner {
+        margin-top: 120px;
+    }
+
+    #carrinho {
+        font-size: 1rem;
+    }
+
+    .subtitle:first-child {
+        margin-top: 0px;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .desc_product, .button_product {
+        font-size: 1rem;
+    }
+
+    .preco {
+        font-size: 1.3rem;
+    }
+
+    .carrinho-screen h2 {
+        font-size: 1.5rem;
+    }
+
+    legend, label {
+        font-size: 1.3rem;
+    }
+
+}

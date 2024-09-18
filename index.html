@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Obras & Cia</title>
+</head>
+<body class="all">
+    <section class="carrinho-screen">
+        <h2>Carrinho:</h2>
+        <form action="">
+            <fieldset>
+                <legend>Produtos: N/A</legend>
+            </fieldset>
+            <label for="subtotal">Subtotal: N/A</label>
+            <label for="total">Total: N/A</label>
+            <output id="subtotal" name="subtotal"></output>
+            <output id="total" name="total"></output>
+        </form>
+        <button class="fechar">X</button>
+    </section>
+
+    <header class="header">
+        <div class="wrapper_logo">
+            <a class="logo_a" href="./index.html">
+                <h1 class="logo_title">OBRAS<span class="e"> & </span>CIA</h1>
+            </a>
+    
+            <a class="carrinho" id="carrinho">Carrinho</a>
+        </div>
+        
+
+        <div class="wrapper_search">
+            <input class="input search_field" type="search" name="search" id="search_field" placeholder="Digite aqui o nome do produto..." autocomplete="off">
+            <button class="button search_button" id="search_button">Pesquisar</button>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="slide-wrapper">
+            <div class="slide-nav-buttons-wrapper">
+                <button class="slide-nav-button slide-nav-button-prev">&#8249;</button>
+                <button class="slide-nav-button slide-nav-button-next">&#8250;</button>
+            </div>
+    
+            <ul class="slide-list-wrapper">
+                <li class="slide-item" data-index="0">
+                    <img src="./img/pluzie.png">
+                </li>
+                <li data-index="1" class="slide-item">
+                    <img src="./img/Logo-Krona.png">
+                </li>
+                <li data-index="2" class="slide-item">
+                    <img src="./img/LOGO BRANCO SEM FUNDO.png">
+                </li>
+                <li class="slide-item" data-index="3">
+                    <img src="./img/fortleve.png">
+                </li>
+                
+            </ul>
+        </div> <!-- ./slide-wrapper -->
+    </section>
+
+    <main class="main">
+        <section class="tintas">
+            <h2 class="subtitle subtitle_tintas">Tintas: </h2>
+            <ul class="products">
+                <li class="card">
+                    <img class="produtc_img" src="./img/tinta1.jpg" alt="">
+                    <h3 class="desc_product">TINTA ACRILICA INT ECON 5LT AM OURO HIDRAFORT - AB</h3>
+                    <span class="preco">R$ 12,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+                <li class="card">
+                    <img class="produtc_img" src="./img/tinta2.jpg" alt="">
+                    <h3 class="desc_product">TINTA ACRILICA INT ECON 3,6L AZUL CEU FREVOLAR - AR</h3>
+                    <span class="preco">R$ 52,25</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+                <li class="card">
+                    <img class="produtc_img" src="./img/tinta3.jpg" alt="">
+                    <h3 class="desc_product">TINTA SPRAY SINTETICO UG ALUMINIO 350ML TEKBOND - AB</h3>
+                    <span class="preco">R$ 30,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+
+                <li class="card">
+                    <img class="produtc_img" src="./img/tinta4.jpg" alt="">
+                    <h3 class="desc_product">TINTA ACRILICA INT ECON 5LT AZ SAFIRA HIDRAFORT - AB</h3>
+                    <span class="preco">R$ 12,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+            </ul>
+        </section>
+        <section class="eletrica">
+            <h2 class="subtitle subtitle_eletrica">Elétrica: </h2>
+            <ul class="products">
+                <li class="card">
+                    <img class="produtc_img" src="./img/tomada1.jpg" alt="">
+                    <h3 class="desc_product">TOMADA 2S 2P+T PL 4X2 10A BR 19120 PRATIKA ILUMI</h3>
+                    <span class="preco">R$ 5,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+                <li class="card">
+                    <img class="produtc_img" src="./img/tomada2.jpg" alt="">
+                    <h3 class="desc_product">TOMADA BARRA QUAD 2P P/ EXT BR 2634 ILUMI</h3>
+                    <span class="preco">R$ 11,30</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+                <li class="card">
+                    <img class="produtc_img" src="./img/fio1.jpg" alt="">
+                    <h3 class="desc_product">CABO FLEX ANTI-CH 750V 2.5 (12) PT COBREFLEX</h3>
+                    <span class="preco">R$ 100,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+
+                <li class="card">
+                    <img class="produtc_img" src="./img/tomada3.jpg" alt="">
+                    <h3 class="desc_product">INTERRUP 1S SIMP PL 4X2 BR 3200 IDEALE PLUZIE</h3>
+                    <span class="preco">R$ 4,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="ferragem">
+            <h2 class="subtitle subtitle_ferragem">Ferragem: </h2>
+            <ul class="products">
+                <li class="card">
+                    <img class="produtc_img" src="./img/prego2.jpg" alt="">
+                    <h3 class="desc_product">PARAFUSO SEXT SOB 3/8X1.1/2 (10X40) ZCL</h3>
+                    <span class="preco">R$ 13,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+                <li class="card">
+                    <img class="produtc_img" src="./img/prego1.jpg" alt="">
+                    <h3 class="desc_product">Prego de Aço Temperado Niquelado 15x30 com Cabeça 100 peças </h3>
+                    <span class="preco">R$ 12,30</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+                <li class="card">
+                    <img class="produtc_img" src="./img/prego1.jpg" alt="">
+                    <h3 class="desc_product">Prego de Aço Temperado Niquelado 15x15 com Cabeça 100 peças </h3>
+                    <span class="preco">R$ 10,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+
+                <li class="card">
+                    <img class="produtc_img" src="./img/prego1.jpg" alt="">
+                    <h3 class="desc_product">Prego de Aço Temperado Niquelado 07x15 com Cabeça 100 peças </h3>
+                    <span class="preco">R$ 20,99</span>
+                    <button class="button_product">Adicionar no carrinho</button>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
